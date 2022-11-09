@@ -94,7 +94,4 @@ def term_deposit_calculator(interest_paid_in_months, investment_term, interest_r
     final_value = principal*(1+(interest_rate_decimal_permonth/interest_paid_in_months))**(interest_paid_in_months*investment_term)
     return  final_value
 
-print(f"A starting balance of ${round(principal,2)} invested over {investment_term} months at an interest rate of 
-      {interest_rate_percent}% p.a. with interest being paid {dict_names[interest_paid]} will yield a final balance of 
-      ${round(term_deposit_calculator(interest_paid_in_months, 
-      investment_term, interest_rate_decimal_permonth, principal),2)}")
+print(f"A starting balance of ${round(principal,2)} invested over {investment_term} months at an interest rate of {interest_rate_percent}% p.a. with interest being paid {dict_names[interest_paid]} will yield a final balance of ${round(term_deposit_calculator(interest_paid_in_months, investment_term, interest_rate_decimal_permonth, principal),2)}")
